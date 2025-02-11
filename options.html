@@ -1,0 +1,24 @@
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CamShield Settings</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; width: 300px; }
+        h2 { text-align: center; }
+        label, input, button { display: block; margin: 10px 0; }
+        .blacklist-container { max-height: 150px; overflow-y: auto; border: 1px solid #ddd; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h2>CamShield Settings</h2>
+
+    <label for="blacklist">Blocked Websites:</label>
+    <input type="text" id="blacklistInput" placeholder="Enter website (e.g., example.com)">
+    <button id="addBlacklist">Add to Blacklist</button>
+
+    <div class="blacklist-container" id="blacklist"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>
