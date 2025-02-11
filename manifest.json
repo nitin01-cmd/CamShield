@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "CamShield",
+    "version": "1.0",
+    "description": "Detects unauthorized webcam access and alerts the user.",
+    "permissions": ["tabs", "activeTab", "storage", "notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon1.jpg",
+        "48": "icon1.jpg",
+        "128": "icon1.jpg"
+      }
+    },
+    "options_page": "options.html"
+  }
+  
